@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -324,7 +324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &213951768
 GameObject:
@@ -570,7 +570,7 @@ Transform:
   - {fileID: 1154416531}
   - {fileID: 599453153}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358110120
 GameObject:
@@ -648,10 +648,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b890dfa8d60538e4196b91008e32fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workTimeDurationMin: 5
-  workTimeDurationMax: 7
-  bugFixTimeDurationMin: 4
-  bugFixTimeDurationMax: 6
+  workTimeDurationMin: 4
+  workTimeDurationMax: 8
+  bugFixTimeDurationMin: 7
+  bugFixTimeDurationMax: 10
   activityBoxSprite: {fileID: 21300000, guid: ba14e2423ec53a248a01985988056dd4, type: 3}
   helpSound1: {fileID: 8300000, guid: fa6589014664f6241b1bcc9f32408782, type: 3}
   helpSound2: {fileID: 8300000, guid: 2d2026ab2acf5d0458ed504f480d3b31, type: 3}
@@ -881,7 +881,7 @@ Transform:
   - {fileID: 375116146}
   - {fileID: 2082796955}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525662516
 GameObject:
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 599453155}
   - component: {fileID: 599453154}
   m_Layer: 10
-  m_Name: BG
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1270,7 +1270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &749834274
 AudioSource:
@@ -1632,7 +1632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995538179
 GameObject:
@@ -2272,12 +2272,12 @@ SpriteRenderer:
   m_SortingLayerID: -1740874505
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 4.03, y: 4.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2310,7 +2310,7 @@ Transform:
   m_Children:
   - {fileID: 770049595}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1164682751
 MonoBehaviour:
@@ -2441,10 +2441,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b890dfa8d60538e4196b91008e32fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workTimeDurationMin: 5
-  workTimeDurationMax: 7
-  bugFixTimeDurationMin: 4
-  bugFixTimeDurationMax: 6
+  workTimeDurationMin: 4
+  workTimeDurationMax: 8
+  bugFixTimeDurationMin: 2
+  bugFixTimeDurationMax: 4
   activityBoxSprite: {fileID: 21300000, guid: ba14e2423ec53a248a01985988056dd4, type: 3}
   helpSound1: {fileID: 0}
   helpSound2: {fileID: 0}
@@ -2874,7 +2874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507468134
 GameObject:
@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 1560491256}
   - component: {fileID: 1560491255}
   m_Layer: 0
-  m_Name: PlayerOrigin
+  m_Name: Dean's Chair
   m_TagString: Origin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3038,7 +3038,7 @@ Transform:
   m_Children:
   - {fileID: 1597607529}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597607527
 GameObject:
@@ -3378,7 +3378,7 @@ GameObject:
   - component: {fileID: 1676144642}
   - component: {fileID: 1676144643}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Dean
   m_TagString: Origin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3396,7 +3396,7 @@ Transform:
   m_Children:
   - {fileID: 1065690316}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1676144640
 MonoBehaviour:
@@ -3431,7 +3431,7 @@ MonoBehaviour:
   numInterns: 4
   loopingAudioSource: {fileID: 1676144643}
   moveLoop: {fileID: 8300000, guid: 4dcb17ccbda93ae43989ebaa7276d413, type: 3}
-  movementSpeed: 0.2
+  movementSpeed: 0.28
 --- !u!82 &1676144642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3751,10 +3751,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b890dfa8d60538e4196b91008e32fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workTimeDurationMin: 5
-  workTimeDurationMax: 7
-  bugFixTimeDurationMin: 4
-  bugFixTimeDurationMax: 6
+  workTimeDurationMin: 1
+  workTimeDurationMax: 4
+  bugFixTimeDurationMin: 6
+  bugFixTimeDurationMax: 9
   activityBoxSprite: {fileID: 21300000, guid: ba14e2423ec53a248a01985988056dd4, type: 3}
   helpSound1: {fileID: 8300000, guid: c869963710324cf4d9fb914f2501c885, type: 3}
   helpSound2: {fileID: 8300000, guid: 2da4e82a0d9340d4dbbbbc913307d15b, type: 3}
@@ -4246,7 +4246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888052777
 GameObject:
@@ -4444,9 +4444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b890dfa8d60538e4196b91008e32fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workTimeDurationMin: 5
-  workTimeDurationMax: 7
-  bugFixTimeDurationMin: 4
+  workTimeDurationMin: 2
+  workTimeDurationMax: 6
+  bugFixTimeDurationMin: 3
   bugFixTimeDurationMax: 6
   activityBoxSprite: {fileID: 21300000, guid: ba14e2423ec53a248a01985988056dd4, type: 3}
   helpSound1: {fileID: 0}
