@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour {
         {
             if (hit.transform.GetComponent<Interactible>())
             {
-                Interactible interactible  = hit.transform.GetComponent<Interactible>();
+                Interactible interactible = hit.transform.GetComponent<Interactible>();
                 if (Input.GetMouseButtonDown(0))
                 {
                     interactible.LeftClickSelect();

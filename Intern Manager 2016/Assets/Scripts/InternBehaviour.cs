@@ -26,13 +26,17 @@ public class InternBehaviour : MonoBehaviour {
     private bool isGoofingOff;
     private bool isSlapped;
 
-    public Sprite activityBoxSprite;
+    //public Sprite activityBoxSprite;
     private Sprite activitySprite;
 
     public AudioClip helpSound1, helpSound2;
 
     private Activity currentActivity;
     public Intern internName;
+
+    [SerializeField]
+    private float activityRotationSpeed;
+    private float activitySpriteRotation;
 
     public Activity CurrentActivity { get { return currentActivity; } }
 	
@@ -72,18 +76,27 @@ public class InternBehaviour : MonoBehaviour {
                 }
             }
         }
+        if(activitySpriteRenderer)
+        {
+            activitySpriteRenderer.gameObject.transform.localRotation = Quaternion.Euler(0, 0, activitySpriteRotation);
+        }
     }
 
     void Initialize()
     {
-        activityBox = transform.Find("ActivityBox").gameObject;
-        activitySpriteRenderer = activityBox.transform.Find("ActivitySprite").GetComponent<SpriteRenderer>();
+        //activityBox = transform.Find("ActivityBox").gameObject;
+        activitySpriteRenderer = transform.Find("ActivitySprite").GetComponent<SpriteRenderer>();
+        activitySpriteRotation = activitySpriteRenderer.gameObject.transform.localEulerAngles.z;
+        Debug.Log("sprite rotation: " + activitySpriteRotation);
+        activitySpriteRenderer.gameObject.transform.localRotation = Quaternion.Euler(0, 0, activitySpriteRotation);
+        StartCoroutine(RotateActivitySprite());
+
         bugTimerDisplay = transform.Find("BugTimerDisplay").gameObject;
         audio = GetComponent<AudioSource>();
 
         bugTimerDisplay.SetActive(false);
 
-        activityBox.GetComponent<SpriteRenderer>().sprite = activityBoxSprite;
+        //activityBox.GetComponent<SpriteRenderer>().sprite = activityBoxSprite;
 
         currentActivity = Activity.Work;
         isWorking = true;
@@ -127,6 +140,13 @@ public class InternBehaviour : MonoBehaviour {
         }
         
         return (Activity)randomActivity;
+    }
+
+    IEnumerator RotateActivitySprite()
+    {
+        yield return new WaitForSeconds(activityRotationSpeed);
+        activitySpriteRotation *= -1;
+        StartCoroutine(RotateActivitySprite());
     }
 
     #region Timer BS
