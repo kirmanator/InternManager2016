@@ -72,7 +72,6 @@ public class InternBehaviour : MonoBehaviour {
                 {
                     Debug.Log("The intern is goofing off");
                     UpdateGoofOffTimer();
-                    GameManager.instance.PStats.isReprimanding = false;
                 }
             }
         }
@@ -187,6 +186,7 @@ public class InternBehaviour : MonoBehaviour {
             UpdateActivity(Activity.Work);
             ResetWorkTimer();
             isGoofingOff = false;
+            GameManager.instance.PStats.isReprimanding = false;
             return;
         }
         goofOffTimer -= Time.deltaTime;

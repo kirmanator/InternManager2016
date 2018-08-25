@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour {
         insanityRate = idealInsanityRate;
         playerMovement = GetComponent<PlayerMovement>();
         StartCoroutine(IncreaseInsanity());
+        isWorking = true;
 	}
 	
 	void Update () {
