@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour {
 	public Vector3 OrigPosition { get { return origPosition; } }
     public InternBehaviour CurrentIntern { get { return currentIntern; } }
 
+    public Animator thisAnimator;
+
 	void Start () {
         stats = gameObject.GetComponent<PlayerStats>();
         origPosition = transform.position;
@@ -40,6 +42,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        thisAnimator.SetBool("AtDesk", stats.isWorking);
 		if(isMoving)
         {
             transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed);
@@ -55,14 +58,17 @@ public class PlayerMovement : MonoBehaviour {
             }
             else
             {
-                if(currentIntern.CurrentActivity != Activity.Work && currentIntern.CurrentActivity != Activity.Bug)
+                if (stats.isReprimanding)
                 {
-                    // Slap their ass:
-                    // Spawn slap sprite, play sound
-                    audioSource.PlayOneShot(AudioManager.instance.slapClip);
-                }
-                if(!(stats.isReprimanding))
-                {
+                    if(currentIntern.CurrentActivity != Activity.Work && currentIntern.CurrentActivity != Activity.Bug)
+                    {
+                    
+                        // Slap their ass:
+                        // Spawn slap sprite, play sound
+                        audioSource.PlayOneShot(AudioManager.instance.slapClip);
+
+                     }
+                } else {
                     stats.isHelping = true;
                 }
                 stats.isWorking = false;
