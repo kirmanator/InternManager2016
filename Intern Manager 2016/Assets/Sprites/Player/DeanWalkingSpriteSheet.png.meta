@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: 6d022c96f74584261aceea6330daf19b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DeanWalkingSpriteSheet_0
+    21300002: DeanWalkingSpriteSheet_1
+    21300004: DeanWalkingSpriteSheet_2
+    21300006: DeanWalkingSpriteSheet_3
+    21300008: DeanWalkingSpriteSheet_4
+    21300010: DeanWalkingSpriteSheet_5
+    21300012: DeanWalkingSpriteSheet_6
+    21300014: DeanWalkingSpriteSheet_7
+    21300016: DeanWalkingSpriteSheet_8
+    21300018: DeanWalkingSpriteSheet_9
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 404
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63070820474914fbfa6f4c73a5e78167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 404
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a8e42b77f244ff181f85d2486d8517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 410
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97d1b32e5dac47b8853f88fde238ccd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 0
+        width: 405
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b108146a85f3f4ca38581f4cf1e41abf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 0
+        width: 398
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df32e1f9ad12438e9b447f009023cdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 0
+        width: 398
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd60f8150a1a24871b2a7679fdc63538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 0
+        width: 403
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c8fd8d030ec49669947629bf09e704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 0
+        width: 402
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457792cb538a84dcfbc43544e60acd91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 0
+        width: 404
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d1606d5747943ac94ca88b2baf2df9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeanWalkingSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 0
+        width: 402
+        height: 450
+      alignment: 9
+      pivot: {x: 0.715, y: 0.435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4233b6f1da5fc4207998ac0c86628b37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 36a3e3f34d9f94dda95bf03ce49e2af6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

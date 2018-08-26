@@ -62,16 +62,14 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     if(currentIntern.CurrentActivity != Activity.Work && currentIntern.CurrentActivity != Activity.Bug)
                     {
-                    
-                        // Slap their ass:
-                        // Spawn slap sprite, play sound
+                        stats.ActivateHand();
                         audioSource.PlayOneShot(AudioManager.instance.slapClip);
-
-                     }
-                } else {
-                    stats.isHelping = true;
+                    }
                 }
-                stats.isWorking = false;
+                else {
+                    stats.isHelping = true;
+                    stats.isWorking = false;
+                }
                 //Debug.Log("I have reached my destination");
                 isMoving = false;
                 

@@ -153,6 +153,18 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void DisableInterns()
+    {
+        foreach(Interactible interact in FindObjectsOfType<Interactible>())
+        {
+            interact.enabled = false;
+        }
+        foreach(InternBehaviour ib in FindObjectsOfType<InternBehaviour>())
+        {
+            ib.enabled = false;
+        }
+    }
+
     public void AddLargeIntervalToPStats()
     {
         pStats.AddToInsanityRate(pStats.largeInsanityInterval);

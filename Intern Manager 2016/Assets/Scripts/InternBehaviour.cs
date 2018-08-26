@@ -10,7 +10,7 @@ public class InternBehaviour : MonoBehaviour {
     GameObject activityBox;
     SpriteRenderer activitySpriteRenderer;
     GameObject bugTimerDisplay;
-    AudioSource audio;
+    AudioSource audioSource;
 
     [SerializeField]
     private float workTimeDurationMin, workTimeDurationMax;
@@ -29,7 +29,8 @@ public class InternBehaviour : MonoBehaviour {
     //public Sprite activityBoxSprite;
     private Sprite activitySprite;
 
-    public AudioClip helpSound1, helpSound2;
+    [SerializeField]
+    private List<AudioClip> helpSounds;
 
     private Activity currentActivity;
     public Intern internName;
@@ -86,12 +87,14 @@ public class InternBehaviour : MonoBehaviour {
         //activityBox = transform.Find("ActivityBox").gameObject;
         activitySpriteRenderer = transform.Find("ActivitySprite").GetComponent<SpriteRenderer>();
         activitySpriteRotation = activitySpriteRenderer.gameObject.transform.localEulerAngles.z;
-        Debug.Log("sprite rotation: " + activitySpriteRotation);
+
+        //Debug.Log("sprite rotation: " + activitySpriteRotation);
+        
         activitySpriteRenderer.gameObject.transform.localRotation = Quaternion.Euler(0, 0, activitySpriteRotation);
         StartCoroutine(RotateActivitySprite());
 
         bugTimerDisplay = transform.Find("BugTimerDisplay").gameObject;
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 
         bugTimerDisplay.SetActive(false);
 
@@ -131,11 +134,13 @@ public class InternBehaviour : MonoBehaviour {
     Activity ChooseRandomActivity()
     {
         int randomActivity = (int)Mathf.Round(UnityEngine.Random.Range(0, Enum.GetNames(typeof(Activity)).Length));
+        //Debug.Log("random activity: " + ((Activity)randomActivity).ToString());
         if((Activity)randomActivity == Activity.Bug)
         {
-            int choice = (int)Mathf.Round(UnityEngine.Random.value);
-            audio.PlayOneShot(AudioManager.instance.BugClip);
-            audio.PlayOneShot(choice == 0 ? helpSound1 : helpSound2);
+            float choice = Mathf.Round(UnityEngine.Random.value);
+            audioSource.PlayOneShot(AudioManager.instance.BugClip);
+            Debug.Log("audioclip index: " + (int)(Mathf.Round(choice * (helpSounds.Count - 1))));
+            audioSource.PlayOneShot(helpSounds[(int)(Mathf.Round(choice * (helpSounds.Count - 1)))]);
         }
         
         return (Activity)randomActivity;
